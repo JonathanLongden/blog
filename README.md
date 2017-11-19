@@ -69,18 +69,7 @@ see React Docs - [Proxying API Requests in Development](https://github.com/faceb
 ```
 
 ## To Do
-
-Build the front-end for your app using React. I will use my beer list example as a reference to what needs to be completed:
-- App component should render a list of all beer names in the database
-- Add a "Delete" button next to every beer name, which when clicked deletes the beer
-- Add a form underneath the list, which when submitted adds new beer to the list
-- Create a new React component for the current beer list and form code (BeerList)
-- Replace the code in App.js with just the code needed for a React router (Code Along)
-- Create a detail component which displayes all properties (name, brewery, alcohol content) of a beer
-- Wrap every beer item in a link, which when clicked takes the user to the designated beer detail page
-- Add a "Back" button under the beer details, which when clicked takes the user back to the beer list
-- Add a "Edit" button under the beer details, which when clicked takes the user to a form where the beer can be edited
-- Redirect user back to beer detail page, if user updates beer
+- Add this later
 
 All the CRUD operations above should persist in your mLab database
 
