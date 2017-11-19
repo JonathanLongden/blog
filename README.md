@@ -1,4 +1,4 @@
-# Georgie's Beer Favorites 
+# Jonathan's Blog
 
 Simple CRUD Application using the LoopBack API framwork and the Create-React-App Generator
 
@@ -14,7 +14,7 @@ npm install -g loopback-cli
 4. Create a LoopBack application
 ```
 lb
-```  
+```
 see LoopBack docs - [Getting Started](http://loopback.io/getting-started/)
 
 5. Add your current mLab MongoDB database asa data source
@@ -57,7 +57,7 @@ npm start
 4. The React starter screen should open in new browser tab
 
 ### Connecting LoopBack API & React Front-End
-1. Open the client/package.json file and add following code 
+1. Open the client/package.json file and add following code
 ```
 "proxy": "http://localhost:4000",
 ```
@@ -76,7 +76,7 @@ Build the front-end for your app using React. I will use my beer list example as
 - Add a form underneath the list, which when submitted adds new beer to the list
 - Create a new React component for the current beer list and form code (BeerList)
 - Replace the code in App.js with just the code needed for a React router (Code Along)
-- Create a detail component which displayes all properties (name, brewery, alcohol content) of a beer  
+- Create a detail component which displayes all properties (name, brewery, alcohol content) of a beer
 - Wrap every beer item in a link, which when clicked takes the user to the designated beer detail page
 - Add a "Back" button under the beer details, which when clicked takes the user back to the beer list
 - Add a "Edit" button under the beer details, which when clicked takes the user to a form where the beer can be edited
