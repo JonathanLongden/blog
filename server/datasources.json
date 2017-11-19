@@ -1,0 +1,7 @@
+{
+  "db": {
+    "url": "mongodb://bigjonblog:bigjonblog@ds017544.mlab.com:17544/bigjonblog",
+    "name": "db",
+    "connector": "mongodb"
+  }
+}

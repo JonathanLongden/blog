@@ -1,0 +1,32 @@
+{
+  "name": "Monster",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "Name": {
+      "type": "string"
+    },
+    "hitpoint": {
+      "type": "number"
+    },
+    "Attack": {
+      "type": "number"
+    },
+    "Defense": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "user": {
+      "type": "belongsTo",
+      "model": "User",
+      "foreignKey": "UserId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

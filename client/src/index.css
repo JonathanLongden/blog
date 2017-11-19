@@ -1,0 +1,18 @@
+nav.navbar.navbar-default
+{
+  font-family: "Times New Roman", Times, serif;
+  font-size: 30px;
+  /* text-align:center; */
+  background: black;
+  color: white
+}
+
+.navbar-brand {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+
+
+
+
