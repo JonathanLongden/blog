@@ -33,9 +33,11 @@ class Header extends Component {
           <NavItem eventKey={2}>Resume</NavItem>
         </LinkContainer>
           <NavDropdown eventKey={3} title="My Work" id="basic-nav-dropdown">
-            <MenuItem eventKey={3.1}>P5</MenuItem>
-            <MenuItem eventKey={3.2}>Pokemon Api</MenuItem>
-            <MenuItem eventKey={3.3}>Future</MenuItem>
+            <LinkContainer to="/p5List">
+              <MenuItem to="/p5List" eventKey={3.1}>P5</MenuItem>
+            </LinkContainer>
+              <MenuItem eventKey={3.2}>Pokemon Api</MenuItem>
+              <MenuItem eventKey={3.3}>Future</MenuItem>
           </NavDropdown>
         </Nav>
     </Navbar>

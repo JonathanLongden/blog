@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import Header from '../Header';
+import Header from '../../Header';
 import { Form, FormControl, ControlLabel, FormGroup, Button } from 'react-bootstrap';
 
 class SignUp extends Component {

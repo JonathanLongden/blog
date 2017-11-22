@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import Header from '../../Header';
-import { Form, FormControl, ControlLabel, FormGroup, Button } from 'react-bootstrap';
+import { Form, FormGroup, Button } from 'react-bootstrap';
 
 
 class SignOut extends Component {
