@@ -5,7 +5,7 @@ import Login from './frontpage/Auth/login/Login';
 import SignUp from './frontpage/Auth/signup/Signup';
 import SignOut from './frontpage/Auth/signout/SignOut';
 import Resume from './resume/resume';
-import p5List from './p5/p5list';
+import P5List from './p5/p5list';
 
 class WebRoute extends Component {
 	constructor(Prop) {
@@ -40,7 +40,7 @@ class WebRoute extends Component {
           <Route exact path="/resume" render={ ({ match, history }) => <Resume match={ match } history={ history } SuperUser = {this.state}/>} />
           <Route exact path="/Signup" render={ ({ match, history }) => <SignUp match={ match } history={ history } SuperUser = {this.state}/>} onLogin={ this.setAccessToken }/>
           <Route exact path="/Signout" render={ ({ match, history }) => <SignOut match={ match } history={ history } SuperUser = {this.state} onLogin={ this.setAccessToken }/>} />
-          <Route exact path="/p5List" render={ ({ match, history }) => <p5List match={ match } history={ history } SuperUser = {this.state} />} />
+          <Route exact path="/p5List" render={ ({ match, history }) => <P5List match={ match } history={ history } SuperUser = {this.state} />} />
         </Switch>
       </BrowserRouter>
       );

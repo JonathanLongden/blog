@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Header from '../frontpage/Header';
 //import { Link } from 'react-router-dom';
 //import axios from 'axios';
 //import P5Wrapper from 'react-p5-wrapper';
@@ -11,6 +12,11 @@ class P5List extends Component {
     this.state = {
       rotation: 150,
       // stateSketch: sketch
+      user: props.SuperUser.user,
+      Work: "TREC",
+      Education: "Montana Code School",
+      Activities: "Cross Country Skiiing",
+      Hobbies: "Family"
     }
   }
 
@@ -18,15 +24,22 @@ class P5List extends Component {
   render() {
     return (
       <div>
-        <br/>
-        <h1>List of P5 Projects</h1>
-        <li>Giphy API P5</li>
-        <li>P5 Motion Picture "Repeats"</li>
-        <li>Pack Man P5" --Coming Soon</li>
-        <li>Tanks Atari P5" --Coming Soon</li>
-        <br />
+      <div>
+      <Header SuperUser = {this.state}/>
       </div>
-    );
+      <div>
+      <br/>
+      <h1>List of P5 Projects</h1>
+      <li>Giphy API P5</li>
+      <li>P5 Motion Picture "Repeats"</li>
+      <li>Pack Man P5" --Coming Soon</li>
+      <li>Tanks Atari P5" --Coming Soon</li>
+      <br />
+      </div>
+    </div>
+
+
+    )
   }
 }
 
