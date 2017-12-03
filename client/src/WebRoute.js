@@ -6,6 +6,7 @@ import SignUp from './frontpage/Auth/signup/Signup';
 import SignOut from './frontpage/Auth/signout/SignOut';
 import Resume from './resume/resume';
 import P5List from './p5/p5list';
+import Example from './p5/projects/p5webexample/example';
 
 class WebRoute extends Component {
 	constructor(Prop) {
@@ -36,12 +37,26 @@ class WebRoute extends Component {
              via the an anonymous render function.
          */}
           <Route exact path="/" render={ ({ match, history }) => <App match={ match } history={ history } SuperUser = {this.state}/>} />
-          <Route exact path="/login" render={ ({ match, history }) => <Login match={ match } history={ history } SuperUser = {this.state} onLogin={ this.setAccessToken }/>} />
           <Route exact path="/resume" render={ ({ match, history }) => <Resume match={ match } history={ history } SuperUser = {this.state}/>} />
+           {/*
+           Auth
+         */}
+          <Route exact path="/login" render={ ({ match, history }) => <Login match={ match } history={ history } SuperUser = {this.state} onLogin={ this.setAccessToken }/>} />
+
           <Route exact path="/Signup" render={ ({ match, history }) => <SignUp match={ match } history={ history } SuperUser = {this.state}/>} onLogin={ this.setAccessToken }/>
           <Route exact path="/Signout" render={ ({ match, history }) => <SignOut match={ match } history={ history } SuperUser = {this.state} onLogin={ this.setAccessToken }/>} />
+
+           {/*
+           p5
+         */}
           <Route exact path="/p5List" render={ ({ match, history }) => <P5List match={ match } history={ history } SuperUser = {this.state} />} />
-        </Switch>
+          <Route exact path="/p5giphyapi" render={ ({ match, history }) => <P5List match={ match } history={ history } SuperUser = {this.state} />} />
+          <Route exact path="/p5motion" render={ ({ match, history }) => <P5List match={ match } history={ history } SuperUser = {this.state} />} />
+          <Route exact path="/p5packman" render={ ({ match, history }) => <P5List match={ match } history={ history } SuperUser = {this.state} />} />
+          <Route exact path="/p5tanks" render={ ({ match, history }) => <P5List match={ match } history={ history } SuperUser = {this.state} />} />
+          <Route exact path="/example" render={ ({ match, history }) => <Example match={ match } history={ history } SuperUser = {this.state} />} />
+
+          </Switch>
       </BrowserRouter>
       );
     }
