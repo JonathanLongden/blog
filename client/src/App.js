@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 //import { BrowserRouter, Switch, Route, Router } from 'react-router-dom';
 
-import Header from './frontpage/Header';
-import Main from './frontpage/Main';
+import Header from './components/frontpage/Header';
+import Main from './components/frontpage/Main';
 
 
 // App.js only delegates the different routes

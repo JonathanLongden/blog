@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import App from './App';
-import Login from './frontpage/Auth/login/Login';
-import SignUp from './frontpage/Auth/signup/Signup';
-import SignOut from './frontpage/Auth/signout/SignOut';
-import Resume from './resume/resume';
-import P5List from './p5/p5list';
-import Example from './p5/projects/p5webexample/example';
-import P5GiphyApi from './p5/projects/p5giphyapi/p5giphyapi';
+import Login from './components/frontpage/Auth/login/Login';
+import SignUp from './components/frontpage/Auth/signup/Signup';
+import SignOut from './components/frontpage/Auth/signout/SignOut';
+import Resume from './components/resume/resume';
+import P5List from './components/p5/p5list';
+import Example from './components/p5/projects/p5webexample/example';
+import P5GiphyApi from './components/p5/projects/p5giphyapi/p5giphyapi';
 
 class WebRoute extends Component {
 	constructor(Prop) {
